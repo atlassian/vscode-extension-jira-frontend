@@ -1,0 +1,70 @@
+{
+    "name": "generator-app",
+    "displayName": "App generator",
+    "description": "Generate an entire app or individual components",
+    "version": "0.0.2",
+    "publisher": "Atlassian",
+    "author": {
+        "name": "jeremyfu"
+    },
+    "icon": "images/tangerine.png",
+    "engines": {
+        "vscode": "^1.21.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:extension.generateApp",
+        "onCommand:extension.generateView",
+        "onCommand:extension.generateState"
+    ],
+    "main": "./extension",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/imjeremyhi/vscode-generator-app.git"
+    },
+    "contributes": {
+        "commands": [
+            {
+                "command": "extension.generateApp",
+                "title": "Generate app"
+            },
+            {
+                "command": "extension.generateView",
+                "title": "Generate view"
+            },
+            {
+                "command": "extension.generateState",
+                "title": "Generate state"
+            }
+        ],
+        "menus": {
+            "explorer/context": [
+                {
+                    "command": "extension.generateApp",
+                    "group": "generator@1"
+                },
+                {
+                    "command": "extension.generateView",
+                    "group": "generator@1"
+                },
+                {
+                    "command": "extension.generateState",
+                    "group": "generator@1"
+                }
+            ]
+        }
+    },
+    "scripts": {
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "node ./node_modules/vscode/bin/test"
+    },
+    "devDependencies": {
+        "typescript": "^2.6.1",
+        "vscode": "^1.1.6",
+        "eslint": "^4.11.0",
+        "@types/node": "^7.0.43",
+        "@types/mocha": "^2.2.42"
+    }
+}
