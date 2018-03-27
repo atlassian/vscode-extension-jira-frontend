@@ -1,17 +1,13 @@
 {
     "name": "jira-frontend",
-    "displayName": "Jira Frontend app generator",
-    "description": "Generate an entire app or individual components",
+    "displayName": "Jira Frontend",
+    "description": "Extension for all things Jira Frontend.",
     "version": "0.0.1",
     "publisher": "Atlassian",
     "author": {
-        "name": "jeremyfu"
+        "name": "Atlassian"
     },
     "icon": "images/jfp.png",
-    "keywords": [
-        "app",
-        "generator"
-    ],
     "engines": {
         "vscode": "^1.21.0"
     },
