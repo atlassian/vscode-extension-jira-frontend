@@ -4,6 +4,5 @@
 ![alt text](images/menu.png "Menu options")
 
 ## Terminal will come up with prompts you need to fill in about your new app, component, or state. After which your new app will be generated ##
-<!-- ![alt text](images/generate.png "Generation") -->
 
 ## Enjoy! ##
