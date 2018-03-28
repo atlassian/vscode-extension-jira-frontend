@@ -53,7 +53,7 @@
                 },
                 {
                     "command": "extension.generateState",
-                    "group": "generator@1",
+                    "group": "generator@2",
                     "when": "explorerResourceIsFolder"
                 }
             ]
