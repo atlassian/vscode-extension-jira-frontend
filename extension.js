@@ -1,5 +1,13 @@
 const vscode = require('vscode');
 
+function sendToTerminal(command, currentPath) {
+    let terminal = vscode.window.createTerminal();
+    terminal.show();
+
+    terminal.sendText(command, true);
+    terminal.sendText(currentPath, true);
+}
+
 function activate(context) {
     let generateApp = vscode.commands.registerCommand('extension.generateApp', function (e) {
         const currentPath = vscode.workspace.asRelativePath(e.fsPath);
@@ -8,11 +16,8 @@ function activate(context) {
             return;
         }
 
-        let terminal = vscode.window.createTerminal();
-        terminal.show();
-
-        terminal.sendText("yarn generate", true);
-        terminal.sendText(currentPath + "/config.json", true);
+        const pathToConfig = currentPath + "/config.json";
+        sendToTerminal("yarn generate", pathToConfig);
     });
 
     let generateView = vscode.commands.registerCommand('extension.generateView', function (e) {
@@ -22,11 +27,7 @@ function activate(context) {
             return;
         }
 
-        let terminal = vscode.window.createTerminal();
-        terminal.show();
-
-        terminal.sendText("yarn generate view", true);
-        terminal.sendText(currentPath, true);
+        sendToTerminal("yarn generate view", currentPath);
     });
 
     let generateState = vscode.commands.registerCommand('extension.generateState', function (e) {
@@ -36,11 +37,7 @@ function activate(context) {
             return;
         }
 
-        let terminal = vscode.window.createTerminal();
-        terminal.show();
-
-        terminal.sendText("yarn generate state", true);
-        terminal.sendText(currentPath, true);
+        sendToTerminal("yarn generate state", currentPath);
     });
 
     context.subscriptions.push(generateApp, generateView, generateState);
