@@ -1,0 +1,42 @@
+{
+    "Action": {
+		"prefix": "action",
+		"description": "Transforms a selected creator function name into a full redux action",
+		"body": [
+			"// ${TM_SELECTED_TEXT/([a-z]*)([A-Z])?/$1${2:+ }${2:/downcase}/g}",
+			"",
+			"export const ${TM_SELECTED_TEXT/([a-z]*)([A-Z])?/${1:/upcase}${2:+_}$2/g}: '${TM_SELECTED_TEXT/([a-z]*)([A-Z])?/${1:/upcase}${2:+_}$2/g}' = '${TM_SELECTED_TEXT/([a-z]*)([A-Z])?/${1:/upcase}${2:+_}$2/g}';",
+			"",
+			"export type ${TM_SELECTED_TEXT/^([a-z])/${1:/upcase}/g}Payload = {|",
+				"\t$1",
+			"|};",
+			"",
+			"export type ${TM_SELECTED_TEXT/^([a-z])/${1:/upcase}/g}Action = {|",
+				"\ttype: typeof ${TM_SELECTED_TEXT/([a-z]*)([A-Z])?/${1:/upcase}${2:+_}$2/g},",
+				"\tpayload: ${TM_SELECTED_TEXT/^([a-z])/${1:/upcase}/g}Payload,",
+			"|};",
+			"",
+			"export const ${TM_SELECTED_TEXT} = (payload: ${TM_SELECTED_TEXT/^([a-z])/${1:/upcase}/g}Payload): ${TM_SELECTED_TEXT/^([a-z])/${1:/upcase}/g}Action => ({",
+				"\ttype: ${TM_SELECTED_TEXT/([a-z]*)([A-Z])?/${1:/upcase}${2:+_}$2/g},",
+				"\tpayload,",
+			"});$0"
+		]
+	},
+	"Action (No Payload)": {
+		"prefix": "action-no-payload",
+		"description": "Transforms a selected creator function name into a full redux action, without a payload",
+		"body": [
+			"// ${TM_SELECTED_TEXT/([a-z]*)([A-Z])?/$1${2:+ }${2:/downcase}/g}",
+			"",
+			"export const ${TM_SELECTED_TEXT/([a-z]*)([A-Z])?/${1:/upcase}${2:+_}$2/g}: '${TM_SELECTED_TEXT/([a-z]*)([A-Z])?/${1:/upcase}${2:+_}$2/g}' = '${TM_SELECTED_TEXT/([a-z]*)([A-Z])?/${1:/upcase}${2:+_}$2/g}';",
+			"",
+			"export type ${TM_SELECTED_TEXT/^([a-z])/${1:/upcase}/g}Action = {|",
+				"\ttype: typeof ${TM_SELECTED_TEXT/([a-z]*)([A-Z])?/${1:/upcase}${2:+_}$2/g},",
+			"|};",
+			"",
+			"export const ${TM_SELECTED_TEXT} = (): ${TM_SELECTED_TEXT/^([a-z])/${1:/upcase}/g}Action => ({",
+				"\ttype: ${TM_SELECTED_TEXT/([a-z]*)([A-Z])?/${1:/upcase}${2:+_}$2/g},",
+			"});$0"
+		]
+    }
+}

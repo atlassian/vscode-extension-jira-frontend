@@ -1,8 +1,12 @@
 
 # Jira Frontend
 
+## Snippets
+
+See [list of snippets](snippets/snippets.md)
+
 ## Generator App
-Right click the folder where you want to generate your new app, component, or reducer. Click on the menu item that corresponds to what you want to do: [Generate app, Generate view, Generate state].
+Right click the folder where you want to generate your new app, component, or reducer. Click on the menu item that corresponds to what you want to do: "Generate app", "Generate view", or "Generate state".
 
 The terminal will come up with prompts you need to fill in about your new app, component, or reducer - after which your new app, component, or state will be generated.
 

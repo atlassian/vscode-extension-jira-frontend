@@ -1,0 +1,79 @@
+{
+	"Button": {
+		"prefix": "import-ak-button",
+		"description": "Imports AtlasKit Button",
+		"body": [
+			"import Button from '@atlaskit/button';$0"
+		]
+	},
+	"Button Group": {
+		"prefix": "import-ak-button-group",
+		"description": "Imports AtlasKit Button Group",
+		"body": [
+			"import { ButtonGroup } from '@atlaskit/button';$0"
+		]
+	},
+	"Flag Group": {
+		"prefix": "import-ak-flag-group",
+		"description": "Imports AtlasKit Flag Group",
+		"body": [
+			"import { FlagGroup } from '@atlaskit/flag';$0"
+		]
+	},
+	"Icon": {
+		"prefix": "import-ak-icon",
+		"description": "Imports AtlasKit Icon",
+		"body": [
+			"import Icon from '@atlaskit/icon';$0"
+		]
+	},
+	"Icon Glyph": {
+		"prefix": "import-ak-icon-glyph",
+		"description": "Imports an AtlasKit Icon Glypth",
+		"body": [
+			"import ${1}Icon from '@atlaskit/icon/glyph/${2:icon-id}';$0"
+		]
+	},
+	"Inline Message": {
+		"prefix": "import-ak-inline-message",
+		"description": "Import's AtlasKit InlineMessage",
+		"body": [
+			"import InlineMessage from '@atlaskit/inline-message';$0"
+		]
+	},
+	"Lozenge": {
+		"prefix": "import-ak-lozenge",
+		"description": "Import's AtlasKit Lozenge",
+		"body": [
+			"import Lozenge from '@atlaskit/lozenge';$0"
+		]
+	},
+	"Spinner": {
+		"prefix": "import-ak-spinner",
+		"description": "Imports AtlasKit Spinner",
+		"body": [
+			"import Spinner from '@atlaskit/spinner';$0"
+		]
+	},
+	"Tooltip": {
+		"prefix": "import-ak-tooltip",
+		"description": "Imports AtlasKit Tooltip",
+		"body": [
+			"import Tooltip from '@atlaskit/tooltip';$0"
+		]
+	},
+	"Grid Unit": {
+		"prefix": "import-ak-gridunit",
+		"description": "Imports the AtlasKit grid unit",
+		"body": [
+			"import { gridUnit } from 'common/styles';$0"
+		]
+	},
+	"Colors": {
+		"prefix": "import-ak-colors",
+		"description": "Imports AtlasKit colors",
+		"body": [
+			"import { colors } from '@atlaskit/theme';$0"
+		]
+	}
+}
