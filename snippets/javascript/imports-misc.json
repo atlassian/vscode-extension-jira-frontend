@@ -1,0 +1,37 @@
+{
+	"lodash": {
+		"prefix": "import-lo",
+		"description": "Imports a lodash function",
+		"body": [
+			"import ${1:func} from 'lodash/${1:func}';$0"
+		]
+	},
+	"Storybook: Action": {
+		"prefix": "import-story-action",
+		"description": "Imports 'action' from the Storybook Actions addon",
+		"body": [
+			"import { action } from '@storybook/addon-actions';$0"
+		]
+	},
+	"Lorem Ipsum": {
+		"prefix": "import-lorem",
+		"description": "Imports the 'lorem ipsum' test utility",
+		"body": [
+			"import loremIpsum from 'common/test/lorem-ipsum';$0"
+		]
+	},
+	"Reselect": {
+		"prefix": "import-reselect",
+		"description": "Imports 'createSelector' and 'Selector' type from reselect",
+		"body": [
+			"import { createSelector, type Selector } from 'reselect';$0"
+		]
+	},
+    "Tangerine: Messages": {
+		"prefix": "import-messages",
+		"description": "Imports 'messages' from a sibliing messages.js folder",
+		"body": [
+			"import messages from './messages';$0"
+		]
+	}
+}
