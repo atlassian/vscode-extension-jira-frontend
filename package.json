@@ -57,7 +57,17 @@
                     "when": "explorerResourceIsFolder"
                 }
             ]
-        }
+        },
+        "snippets": [
+            {
+                "language": "javascript",
+                "path": "./snippets/javascript/imports.json"
+            },
+            {
+                "language": "javascript",
+                "path": "./snippets/javascript/actions.json"
+            }
+        ]
     },
     "scripts": {
         "postinstall": "node ./node_modules/vscode/bin/install"
