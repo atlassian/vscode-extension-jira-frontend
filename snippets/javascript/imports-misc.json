@@ -20,7 +20,7 @@
 			"import { createSelector, type Selector } from 'reselect';$0"
 		]
 	},
-    "Tangerine: Messages": {
+	"Tangerine: Messages": {
 		"prefix": "import-messages",
 		"description": "Imports 'messages' from a sibliing messages.js folder",
 		"body": [

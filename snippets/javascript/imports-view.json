@@ -1,5 +1,5 @@
 {
-    "React": {
+	"React": {
 		"prefix": "import-react",
 		"description": "Imports React",
 		"body": [
