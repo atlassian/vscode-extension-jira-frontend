@@ -1,5 +1,5 @@
 {
-    "Action": {
+	"Action": {
 		"prefix": "action",
 		"description": "Transforms a selected creator function name into a full redux action",
 		"body": [
@@ -38,5 +38,5 @@
 				"\ttype: ${TM_SELECTED_TEXT/([a-z]*)([A-Z])?/${1:/upcase}${2:+_}$2/g},",
 			"});$0"
 		]
-    }
+	}
 }

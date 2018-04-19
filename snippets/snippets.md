@@ -28,6 +28,8 @@ export const createFoo = (payload: CreateFooPayload): CreateFooAction => ({
 
 #### `action-no-payload` (on selected text)
 
+For selected text `createFoo`:
+
 ```js
 // create foo
 
@@ -40,6 +42,28 @@ export type CreateFooAction = {|
 export const createFoo = (): CreateFooAction => ({
     type: CREATE_FOO,
 });
+```
+
+## View
+
+#### `props-spread`
+
+```
+const { $1 } = this.props;
+```
+
+#### `props-spread-intl`
+
+```js
+const { intl: { formatMessage } } = this.props;
+```
+
+#### `props-default`
+
+```
+static defaultProps = {
+    $1
+};
 ```
 
 ## Imports
@@ -88,6 +112,12 @@ import InlineMessage from '@atlaskit/inline-message';
 import Lozenge from '@atlaskit/lozenge';
 ```
 
+#### `import-ak-modal`
+
+```js
+import ModalDialog from 'common/components/modal-dialog';
+```
+
 #### `import-ak-spinner`
 
 ```js
@@ -112,6 +142,68 @@ import { gridUnit } from 'common/styles';
 import { colors } from '@atlaskit/theme';
 ```
 
+### View
+
+#### `import-react`
+
+```js
+import React from 'react';
+```
+
+#### `import-react-component`
+
+```js
+import React, { Component } from 'react';
+```
+
+#### `import-react-component-type`
+
+```js
+import React, { type ComponentType } from 'react';
+```
+
+#### `import-react-fragment`
+
+```js
+import React, { Fragment } from 'react';
+```
+
+#### `import-intl-define`
+
+```js
+import { defineMessages } from 'react-intl';
+```
+
+#### `import-intl-inject`
+
+```js
+import { injectIntl, type IntlShape } from 'react-intl';
+```
+
+#### `import-styled`
+
+```js
+import styled from 'styled-components';
+```
+
+#### `import-story-storiesof`
+
+```js
+import { decoratedStoriesOf } from 'common/util/storybook';
+```
+
+#### `import-story-action`
+
+```js
+import { action } from '@storybook/addon-actions';
+```
+
+#### `import-redux-connect`
+
+```js
+import { connect } from 'react-redux';
+```
+
 ### Misc
 
 #### `import-lo`
@@ -126,10 +218,10 @@ import ${1:func} from 'lodash/${1:func}';
 import loremIpsum from 'common/test/lorem-ipsum';
 ```
 
-#### `import-story-action`
+#### `import-reselect`
 
 ```js
-import { action } from '@storybook/addon-actions';
+import { createSelector, type Selector } from 'reselect';
 ```
 
 #### `import-messages`

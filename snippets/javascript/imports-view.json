@@ -1,0 +1,72 @@
+{
+	"React": {
+		"prefix": "import-react",
+		"description": "Imports React",
+		"body": [
+			"import React from 'react';$0"
+		]
+	},
+	"React: Component": {
+		"prefix": "import-react-component",
+		"description": "Imports 'Component' from React",
+		"body": [
+			"import React, { Component } from 'react';$0"
+		]
+	},
+	"React: ComponentType": {
+		"prefix": "import-react-component-type",
+		"description": "Imports 'ComponentType' type from React",
+		"body": [
+			"import React, { type ComponentType } from 'react';$0"
+		]
+	},
+	"React: Fragment": {
+		"prefix": "import-react-fragment",
+		"description": "Imports 'Fragment' from React",
+		"body": [
+			"import React, { Fragment } from 'react';$0"
+		]
+	},
+	"React-Intl: defineMessage": {
+		"prefix": "import-intl-define",
+		"description": "Imports 'defineMessages' from react-intl",
+		"body": [
+			"import { defineMessages } from 'react-intl';$0"
+		]
+	},
+	"React-Intl: injectIntl": {
+		"prefix": "import-intl-inject",
+		"description": "Imports 'injectIntl' and 'IntlShape' from react-intl",
+		"body": [
+			"import { injectIntl, type IntlShape } from 'react-intl';$0"
+		]
+	},
+	"Styled": {
+		"prefix": "import-styled",
+		"description": "Imports 'styled' from Styled Components",
+		"body": [
+			"import styled from 'styled-components';$0"
+		]
+	},
+	"Storybook: Stories of": {
+		"prefix": "import-story-storiesof",
+		"description": "Imports 'decoratedStoriesOf' from Storybook",
+		"body": [
+			"import { decoratedStoriesOf } from 'common/util/storybook';$0"
+		]
+	},
+	"Storybook: Action": {
+		"prefix": "import-story-action",
+		"description": "Imports 'action' from the Storybook Actions addon",
+		"body": [
+			"import { action } from '@storybook/addon-actions';$0"
+		]
+	},
+	"Redux: Connect": {
+		"prefix": "import-redux-connect",
+		"description": "Imports 'connect' from react-redux",
+		"body": [
+			"import { connect } from 'react-redux';$0"
+		]
+	}
+}

@@ -6,13 +6,6 @@
 			"import ${1:func} from 'lodash/${1:func}';$0"
 		]
 	},
-	"Storybook: Action": {
-		"prefix": "import-story-action",
-		"description": "Imports 'action' from the Storybook Actions addon",
-		"body": [
-			"import { action } from '@storybook/addon-actions';$0"
-		]
-	},
 	"Lorem Ipsum": {
 		"prefix": "import-lorem",
 		"description": "Imports the 'lorem ipsum' test utility",
@@ -27,7 +20,7 @@
 			"import { createSelector, type Selector } from 'reselect';$0"
 		]
 	},
-    "Tangerine: Messages": {
+	"Tangerine: Messages": {
 		"prefix": "import-messages",
 		"description": "Imports 'messages' from a sibliing messages.js folder",
 		"body": [

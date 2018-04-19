@@ -1,0 +1,25 @@
+{
+	"Props: Spread": {
+		"prefix": "props-spread",
+		"description": "Spread props",
+		"body": [
+			"const { $1 } = this.props;$0"
+		]
+	},
+	"Props: Spread Intl": {
+		"prefix": "props-spread-intl",
+		"description": "Get 'formatMessage' from props",
+		"body": [
+			"const { intl: { formatMessage } } = this.props;$0"
+		]
+	},
+	"Props: Default": {
+		"prefix": "props-default",
+		"description": "Initiate a React component's default props",
+		"body": [
+			"static defaultProps = {",
+				"\t$1",
+			"};$0"
+		]
+	}
+}

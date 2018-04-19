@@ -36,16 +36,23 @@
 	},
 	"Inline Message": {
 		"prefix": "import-ak-inline-message",
-		"description": "Import's AtlasKit InlineMessage",
+		"description": "Imports AtlasKit InlineMessage",
 		"body": [
 			"import InlineMessage from '@atlaskit/inline-message';$0"
 		]
 	},
 	"Lozenge": {
 		"prefix": "import-ak-lozenge",
-		"description": "Import's AtlasKit Lozenge",
+		"description": "Imports AtlasKit Lozenge",
 		"body": [
 			"import Lozenge from '@atlaskit/lozenge';$0"
+		]
+	},
+	"Modal": {
+		"prefix": "import-ak-modal",
+		"description": "Imports AtlasKit Modal",
+		"body": [
+			"import ModalDialog from 'common/components/modal-dialog';$0"
 		]
 	},
 	"Spinner": {
