@@ -2,7 +2,7 @@
     "name": "jira-frontend",
     "displayName": "Jira Frontend",
     "description": "Extension for all things Jira Frontend.",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "publisher": "Atlassian",
     "author": {
         "name": "Atlassian"
