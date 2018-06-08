@@ -66,6 +66,18 @@ static defaultProps = {
 };
 ```
 
+## Misc
+
+#### `debugger`
+
+```js
+// **********************
+// *** 💀 remove me 💀 ***
+// **********************
+// eslint-disable-next-line no-debugger
+debugger;
+```
+
 ## Imports
 
 ### AtlasKit
@@ -130,16 +142,28 @@ import Spinner from '@atlaskit/spinner';
 import Tooltip from '@atlaskit/tooltip';
 ```
 
-#### `import-ak-grid-unit`
+#### `import-ak-gridsize`
 
 ```js
 import { gridUnit } from 'common/styles';
+```
+
+#### `import-ak-borderradius`
+
+```js
+import { borderRadius } from 'common/styles';
 ```
 
 #### `import-ak-colors`
 
 ```js
 import { colors } from '@atlaskit/theme';
+```
+
+#### `import-ak-layers`
+
+```js
+import { layers } from 'common/styles';
 ```
 
 ### View
@@ -202,6 +226,52 @@ import { action } from '@storybook/addon-actions';
 
 ```js
 import { connect } from 'react-redux';
+```
+
+### State
+
+#### `import-unstated-provider`
+
+```js
+import { Provider } from 'unstated';
+```
+
+#### `import-unstated-subscribe`
+
+```js
+import { Subscribe } from 'unstated';
+```
+
+#### `import-unstated-container`
+
+```js
+import { Container } from 'unstated';
+```
+
+#### `import-unstated-basecontainer`
+
+```js
+import { Container as BaseContainer } from 'unstated';
+```
+
+### Analytics
+
+#### `import-analytics-viewtracker`
+
+```js
+import { ViewTracker } from '@atlassian/analytics-web-react';
+```
+
+#### `import-analytics-subject`
+
+```js
+import { AnalyticsSubject } from '@atlassian/analytics-web-react';
+```
+
+#### `import-analytics-connectui`
+
+```js
+import { connectUiAnalytics } from '@atlassian/analytics-web-react';
 ```
 
 ### Misc

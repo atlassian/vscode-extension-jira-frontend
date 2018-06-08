@@ -1,0 +1,23 @@
+{
+    "View Tracker": {
+		"prefix": "import-analytics-viewtracker",
+		"description": "Imports the analytics ViewTracker component",
+		"body": [
+			"import { ViewTracker } from '@atlassian/analytics-web-react';$0"
+		]
+    },
+    "Analytics Subject": {
+		"prefix": "import-analytics-subject",
+		"description": "Imports the analytics AnalyticsSubject HOC",
+		"body": [
+			"import { AnalyticsSubject } from '@atlassian/analytics-web-react';$0"
+		]
+    },
+    "connectUiAnalytics": {
+		"prefix": "import-analytics-connectui",
+		"description": "Imports the analytics connectUiAnalytics utility",
+		"body": [
+			"import { connectUiAnalytics } from '@atlassian/analytics-web-react';$0"
+		]
+    }
+}
