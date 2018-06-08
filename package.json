@@ -2,7 +2,7 @@
     "name": "jira-frontend",
     "displayName": "Jira Frontend",
     "description": "Extension for all things Jira Frontend.",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "publisher": "Atlassian",
     "author": {
         "name": "Atlassian"
@@ -69,6 +69,14 @@
             },
             {
                 "language": "javascript",
+                "path": "./snippets/javascript/imports-state.json"
+            },
+            {
+                "language": "javascript",
+                "path": "./snippets/javascript/imports-analytics.json"
+            },
+            {
+                "language": "javascript",
                 "path": "./snippets/javascript/imports-misc.json"
             },
             {
@@ -78,6 +86,10 @@
             {
                 "language": "javascript",
                 "path": "./snippets/javascript/view.json"
+            },
+            {
+                "language": "javascript",
+                "path": "./snippets/javascript/misc.json"
             }
         ]
     },

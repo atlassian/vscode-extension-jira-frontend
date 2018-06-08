@@ -1,0 +1,30 @@
+{
+    "Unstated: Provider": {
+		"prefix": "import-unstated-provider",
+		"description": "Imports the Unstated provider",
+		"body": [
+			"import { Provider } from 'unstated';$0"
+		]
+	},
+	"Unstated: Subscribe": {
+		"prefix": "import-unstated-subscribe",
+		"description": "Imports the Unstated Subscribe component",
+		"body": [
+			"import { Subscribe } from 'unstated';$0"
+		]
+	},
+	"Unstated: Container": {
+		"prefix": "import-unstated-container",
+		"description": "Imports the Unstated Container class",
+		"body": [
+			"import { Container } from 'unstated';$0"
+		]
+	},
+	"Unstated: BaseContainer": {
+		"prefix": "import-unstated-basecontainer",
+		"description": "Imports the Unstated Container class, as 'BaseContainer'",
+		"body": [
+			"import { Container as BaseContainer } from 'unstated';$0"
+		]
+	}
+}

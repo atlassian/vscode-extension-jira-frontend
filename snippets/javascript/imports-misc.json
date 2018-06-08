@@ -22,7 +22,7 @@
 	},
 	"Tangerine: Messages": {
 		"prefix": "import-messages",
-		"description": "Imports 'messages' from a sibliing messages.js folder",
+		"description": "Imports 'messages' from a sibling messages.js folder",
 		"body": [
 			"import messages from './messages';$0"
 		]

@@ -1,0 +1,13 @@
+{
+    "debugger": {
+		"prefix": "debugger",
+		"description": "Debugger with eslint-ignore statement",
+		"body": [
+			"// **********************",
+			"// *** 💀 remove me 💀 ***",
+			"// **********************",
+			"// eslint-disable-next-line no-debugger",
+			"debugger;$0"
+		]
+	}
+}
