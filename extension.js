@@ -1,6 +1,8 @@
 const vscode = require('vscode');
 const path = require('path');
 
+const akColorsHighlight = require('./atlaskit-color-highlight')
+
 function sendToTerminal(command, currentPath) {
     let terminal = vscode.window.createTerminal();
     terminal.show();
@@ -45,9 +47,12 @@ function activate(context) {
     });
 
     context.subscriptions.push(generateApp, generateView, generateState);
+
+    akColorsHighlight.activate(context)
 }
 exports.activate = activate;
 
 function deactivate() {
+    akColorsHighlight.deactivate()
 }
 exports.deactivate = deactivate;
